@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <title>Memory Game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/Users/macbook/Desktop/memory-layout/css/memory-game.css"</link>
+  <link href="card-flip.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:500,700' rel='stylesheet' type='text/css'>
 </head>
 
       <body>
       <h1 class="memory">MEM<i class="fa fa-lightbulb-o fa-2x"></i>RY</h1>
       <h2
+
+          <p style="text-align:right;">
           <i class="fa fa-heart"></i>
           <i class="fa fa-heart"></i>
           <i class="fa fa-heart"></i>
@@ -21,20 +26,153 @@
           <i class="fa fa-heart"></i>
           <i class="fa fa-heart"></i>
           <i class="fa fa-heart"></i>
-          <strong><span id="time">0:27:02</span></strong>
+          <p style="text-align:right;">0:27:02</p>
+
+          <hr>
+
+          <!-- <strong><span class="time">0:27:02</span></strong> -->
+          <!-- <span style="float:right;">0:27:02</span> -->
+
+          </p>
+
+
        <h2>
-          
+<br>
+                                             <!-- master container -->
+          <div class="game-board">
+                                    <!-- row container -->
+          <div class="row-container1">
+                                    <!-- game tiles -->
+                      <!-- 1 -->
+          <div class="Card">
+            <input type="checkbox" id="cbox1" value="first_checkbox">
+              <label  class="card" for="cbox1">
+                  <span class="game-icon"><i class="fa fa-hand-peace-o"></i></span>
+                    </div>
+
+                      <!-- 2 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox2" value="second_checkbox">
+                <label class="card" for="cbox2">
+                    <span class="game-icon"><i class="fa fa-rocket"></i></span>
+                      </div>
+                      <!-- 3 -->
+                <div class="Card">
+                <input type="checkbox" id="cbox3" value="second_checkbox">
+                <label class="card" for="cbox3">
+                    <span class="game-icon"><i class="fa fa-cloud"></i></span>
+                      </div>
+                      <!-- 4 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox4" value="second_checkbox">
+                <label class="card" for="cbox4">
+                    <span class="game-icon"><i class="fa fa-heart-o"></i></span>
+                      </div>
+                      <!-- 5 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox5" value="second_checkbox">
+                <label class="card" for="cbox5">
+                    <span class="game-icon"><i class="fa fa-space-shuttle"></i></span>
+                      </div>
+                      <!-- 6 -->
+
+            <div class="Card">
+              <input type="checkbox" id="cbox6" value="second_checkbox">
+                <label class="card" for="cbox6">
+                    <span class="game-icon"><i class="fa fa-hand-lizard-o"></i></span>
+                      </div>
+                    </div>
+
+
+<br>
+              <div class="row-container2">
+                    <!-- 7 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox7" value="second_checkbox">
+                <label class="card" for="cbox7">
+                  <span class="game-icon"><i class="fa fa-dribbble"></i></span>
+                    </div>
+                    <!-- 8 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox8" value="second_checkbox">
+                <label class="card" for="cbox8">
+                    <span class="game-icon"><i class="fa fa-rocket"></i></span>
+                      </div>
+                      <!-- 9 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox9" value="second_checkbox">
+                <label class="card" for="cbox9">
+                    <span class="game-icon"><i class="fa fa-money"></i></span>
+                      </div>
+                      <!-- 10 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox10" value="second_checkbox">
+                <label class="card" for="cbox10">
+                    <span class="game-icon"><i class="fa fa-hand-peace-o"></i></span>
+                      </div>
+                      <!-- 11 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox11" value="second_checkbox">
+                <label class="card" for="cbox11">
+                    <span class="game-icon"><i class="fa fa-lemon-o"></i></span>
+                      </div>
+                      <!-- 12 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox12" value="second_checkbox">
+                <label class="card" for="cbox12">
+                    <span class="game-icon"><i class="fa fa-heart-o"></i></span>
+                      </div>
+                    </div>
+
+
+                        <div class="row-container3">
+                      <!-- 13 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox13" value="second_checkbox">
+                <label class="card" for="cbox13">
+                  <span class="game-icon"><i class="fa fa-space-shuttle"></i></span>
+                      </div>
+                      <!-- 14 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox14" value="second_checkbox">
+                <label class="card" for="cbox14">
+                    <span class="game-icon"><i class="fa fa-lemon-o"></i></span>
+                      </div>
+                      <!-- 15 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox15" value="second_checkbox">
+                <label class="card" for="cbox15">
+                    <span class="game-icon"><i class="fa fa-cloud"></i></span>
+                      </div>
+                      <!-- 16 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox16" value="second_checkbox">
+                <label class="card" for="cbox16">
+                    <span class="game-icon"><i class="fa fa-hand-lizard-o"></i></span>
+                      </div>
+                      <!-- 17 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox17" value="second_checkbox">
+                <label class="card" for="cbox17">
+                    <span class="game-icon"><i class="fa fa-money"></i></span>
+                      </div>
+                      <!-- 18 -->
+            <div class="Card">
+              <input type="checkbox" id="cbox18" value="second_checkbox">
+                <label class="card" for="cbox18">
+                    <span class="game-icon"><i class="fa fa-dribbble"></i></i></span>
+                      </div>
+                    </div>
+                          <!-- row container div -->
+                              </div>
 
 
 
 
 
+          </div>
 
-
-
-
-
-
+        <a href="file:///Users/macbook/Desktop/memory-layout/memory-layout.html">Return</a>
       </body>
 
 
