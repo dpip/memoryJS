@@ -1,178 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
   <meta charset="UTF-8">
   <title>Memory Game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/Users/macbook/Desktop/memory-layout/css/memory-game.css"</link>
-  <link href="card-flip.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Orbitron:500,700' rel='stylesheet' type='text/css'>
-</head>
+  <link rel="stylesheet" type="text/css" href="css/memory-game.css"</link>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
 
-      <body>
-      <h1 class="memory">MEM<i class="fa fa-lightbulb-o fa-2x"></i>RY</h1>
-      <h2
-
-          <p style="text-align:right;">
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <i class="fa fa-heart"></i>
-          <p style="text-align:right;">0:27:02</p>
-
-          <hr>
-
-          <!-- <strong><span class="time">0:27:02</span></strong> -->
-          <!-- <span style="float:right;">0:27:02</span> -->
-
-          </p>
-
-
-       <h2>
-<br>
-                                             <!-- master container -->
-          <div class="game-board">
-                                    <!-- row container -->
+  <body>
+    <h1 class="memory">Mem<i class="fa fa-lightbulb-o fa-2x"></i>ry</h1>
+        <div class=heartTime>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <span class= "gone"><i class="fa fa-heart"></i></span>
+          <i class="time"></i>
+        </div>
+      <br>
+<!-- master container -->
+          <div class= "game-board">
+<!-- row container -->
           <div class="row-container1">
-                                    <!-- game tiles -->
-                      <!-- 1 -->
-          <div class="Card">
-            <input type="checkbox" id="cbox1" value="first_checkbox">
-              <label  class="card" for="cbox1">
-                  <span class="game-icon"><i class="fa fa-hand-peace-o"></i></span>
+<!-- game tiles -->
+  <!-- 1 -->
+      <div class="Card" id="card1">
+        <span class="game-icon" id="hand1"><i class="fa fa-hand-peace-o"></i></span>
+      </div>
+  <!-- 2 -->
+      <div class="Card" id="card2">
+        <span class="game-icon" id="rocket1"><i class="fa fa-rocket"></i></span>
+      </div>
+  <!-- 3 -->
+      <div class="Card" id="card3">
+        <span class="game-icon" id="cloud1"><i class="fa fa-cloud"></i></span>
+      </div>
+  <!-- 4 -->
+      <div class="Card"  id="card4">
+        <span class="game-icon" id="heart1"><i class="fa fa-heart-o"></i></span>
+      </div>
+  <!-- 5 -->
+      <div class="Card"  id="card5">
+        <span class="game-icon" id="shuttle1"><i class="fa fa-space-shuttle"></i></span>
+      </div>
+  <!-- 6 -->
+      <div class="Card" id="card6">
+        <span class="game-icon" id="lizzard1"><i class="fa fa-hand-lizard-o"></i></span>
+      </div>
                     </div>
 
-                      <!-- 2 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox2" value="second_checkbox">
-                <label class="card" for="cbox2">
-                    <span class="game-icon"><i class="fa fa-rocket"></i></span>
-                      </div>
-                      <!-- 3 -->
-                <div class="Card">
-                <input type="checkbox" id="cbox3" value="second_checkbox">
-                <label class="card" for="cbox3">
-                    <span class="game-icon"><i class="fa fa-cloud"></i></span>
-                      </div>
-                      <!-- 4 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox4" value="second_checkbox">
-                <label class="card" for="cbox4">
-                    <span class="game-icon"><i class="fa fa-heart-o"></i></span>
-                      </div>
-                      <!-- 5 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox5" value="second_checkbox">
-                <label class="card" for="cbox5">
-                    <span class="game-icon"><i class="fa fa-space-shuttle"></i></span>
-                      </div>
-                      <!-- 6 -->
+            <div class="row-container2">
+  <!-- 7 -->
+      <div class="Card" id="card7">
+        <span class="game-icon" id="dribble1"><i class="fa fa-dribbble"></i></span>
+      </div>
+  <!-- 8 -->
+      <div class="Card" id="card8">
+        <span class="game-icon" id="rocket2"><i class="fa fa-rocket"></i></span>
+      </div>
+  <!-- 9 -->
+      <div class="Card" id="card9">
+        <span class="game-icon" id="money1"><i class="fa fa-money"></i></span>
+      </div>
+  <!-- 10 -->
+      <div class="Card"  id="card10">
+        <span class="game-icon" id="hand2"><i class="fa fa-hand-peace-o"></i></span>
+      </div>
+  <!-- 11 -->
+      <div class="Card" id="card11">
+        <span class="game-icon" id="lemon1"><i class="fa fa-lemon-o"></i></span>
+      </div>
+  <!-- 12 -->
+      <div class="Card" id="card12">
+        <span class="game-icon" id="heart2"2><i class="fa fa-heart-o"></i></span>
+      </div>
+    </div>
 
-            <div class="Card">
-              <input type="checkbox" id="cbox6" value="second_checkbox">
-                <label class="card" for="cbox6">
-                    <span class="game-icon"><i class="fa fa-hand-lizard-o"></i></span>
-                      </div>
-                    </div>
-
-
+          <div class="row-container3">
+  <!-- 13 -->
+    <div class="Card" id="card13">
+      <span class="game-icon" id="shuttle2"><i class="fa fa-space-shuttle"></i></span>
+    </div>
+  <!-- 14 -->
+    <div class="Card" id="card14">
+      <span class="game-icon" id="lemon2"><i class="fa fa-lemon-o"></i></span>
+    </div>
+  <!-- 15 -->
+    <div class="Card"  id="card15">
+      <span class="game-icon" id="cloud2"><i class="fa fa-cloud"></i></span>
+    </div>
+  <!-- 16 -->
+    <div class="Card"  id="card16">
+      <span class="game-icon" id="lizzard2"><i class="fa fa-hand-lizard-o"></i></span>
+    </div>
+  <!-- 17 -->
+    <div class="Card" id="card17">
+      <span class="game-icon" id="money2"><i class="fa fa-money"></i></span>
+    </div>
+  <!-- 18 -->
+    <div class="Card" id="card18">
+      <span class="game-icon" id="dribble2"><i class="fa fa-dribbble"></i></i></span>
+    </div>
+        </div>
+  <!-- row container div -->
+      </div>
+    </div>
 <br>
-              <div class="row-container2">
-                    <!-- 7 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox7" value="second_checkbox">
-                <label class="card" for="cbox7">
-                  <span class="game-icon"><i class="fa fa-dribbble"></i></span>
-                    </div>
-                    <!-- 8 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox8" value="second_checkbox">
-                <label class="card" for="cbox8">
-                    <span class="game-icon"><i class="fa fa-rocket"></i></span>
-                      </div>
-                      <!-- 9 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox9" value="second_checkbox">
-                <label class="card" for="cbox9">
-                    <span class="game-icon"><i class="fa fa-money"></i></span>
-                      </div>
-                      <!-- 10 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox10" value="second_checkbox">
-                <label class="card" for="cbox10">
-                    <span class="game-icon"><i class="fa fa-hand-peace-o"></i></span>
-                      </div>
-                      <!-- 11 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox11" value="second_checkbox">
-                <label class="card" for="cbox11">
-                    <span class="game-icon"><i class="fa fa-lemon-o"></i></span>
-                      </div>
-                      <!-- 12 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox12" value="second_checkbox">
-                <label class="card" for="cbox12">
-                    <span class="game-icon"><i class="fa fa-heart-o"></i></span>
-                      </div>
-                    </div>
+        <a href="index.html" id="return" >Return</a>
+        <script src="css/memory-game.js"></script>
 
-
-                        <div class="row-container3">
-                      <!-- 13 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox13" value="second_checkbox">
-                <label class="card" for="cbox13">
-                  <span class="game-icon"><i class="fa fa-space-shuttle"></i></span>
-                      </div>
-                      <!-- 14 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox14" value="second_checkbox">
-                <label class="card" for="cbox14">
-                    <span class="game-icon"><i class="fa fa-lemon-o"></i></span>
-                      </div>
-                      <!-- 15 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox15" value="second_checkbox">
-                <label class="card" for="cbox15">
-                    <span class="game-icon"><i class="fa fa-cloud"></i></span>
-                      </div>
-                      <!-- 16 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox16" value="second_checkbox">
-                <label class="card" for="cbox16">
-                    <span class="game-icon"><i class="fa fa-hand-lizard-o"></i></span>
-                      </div>
-                      <!-- 17 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox17" value="second_checkbox">
-                <label class="card" for="cbox17">
-                    <span class="game-icon"><i class="fa fa-money"></i></span>
-                      </div>
-                      <!-- 18 -->
-            <div class="Card">
-              <input type="checkbox" id="cbox18" value="second_checkbox">
-                <label class="card" for="cbox18">
-                    <span class="game-icon"><i class="fa fa-dribbble"></i></i></span>
-                      </div>
-                    </div>
-                          <!-- row container div -->
-                              </div>
-
-
-
-
-
-          </div>
-
-        <a href="file:///Users/macbook/Desktop/memory-layout/memory-layout.html">Return</a>
       </body>
 
 
